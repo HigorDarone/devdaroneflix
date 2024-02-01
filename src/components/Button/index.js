@@ -29,7 +29,6 @@ color: black;
 text-align: center;
 border: 0;
 border-radius: 0;
-
 }
 `;
 
