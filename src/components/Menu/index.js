@@ -4,16 +4,18 @@ import './Menu.css'
 import { LogoImage, MenuWrapper } from "./ButtonLink/style";
 import Button from "../Button";
 
+import { Link } from 'react-router-dom'
+
 
 function Menu() {
 
     return (
         <MenuWrapper className="Menu">
-            <a href="/">
+            <Link to="/">
                <LogoImage className="Logo" src={Logo} alt="DaroneFlix" />
-            </a>
+            </Link>
 
-            <Button as="a" className="BotaoLink" href="/">
+            <Button as={Link} className="BotaoLink" to="cadastro/video">
                 Novo video
             </Button>
         </MenuWrapper>
